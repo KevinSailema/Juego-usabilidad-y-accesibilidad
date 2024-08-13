@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 5</title>
+    
+    <!-- Agregar Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Agregar Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tu hoja de estilos personalizada -->
+    <link rel="stylesheet" href="css/nivel1.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card">
+            <!-- Encabezado de Nivel -->
+            <div class="card-header text-center">
+                <h2>Nivel 5</h2>
+            </div>
+            
+            <!-- Imagen de fondo -->
+           <img src="assets/images/backgrond-level-1.jpg" alt="Fondo de selección de niveles un restaurante Italiano" class="card-img" longdesc="Fondo de selección de niveles un restaurante Italiano">
+            
+            <!-- Imagen de la pizza -->
+            <img src="assets/images/chef.png" alt="Imagen de Chef en dibujo" class="chef-img" longdesc="Imagen de Chef en dibujo">
+            <img src="assets/images/pizza.png" alt="Imagen de Pizza" class="pizza-img" longdesc="Imagen de una pizza animada en dibujo" >
+            <img src="assets/images/cliente5.png" alt="Imagen de un hombre asalariado" class="client-img" longdesc="Imagen de un hombre asalariado" >
+            
+            <!-- Enunciado -->
+            <div class="card-body text-center">
+                <h2>Un cliente ha venido el día de hoy a pedir dos quintos de pizza: </h2>
+                <h2>¿Cómo deberías cortar la pizza?</h2>
+            </div>
+            
+            <!-- Opciones -->
+            <div class="opciones">
+                <button class="btn btn-primary btn-lg" id="opcion-1" onclick="goScore(); updateScoreData(10, 'Nivel 5'); displayScore(); ">Cortar la Pizza en 5 Pedazos y dar 2 </button>
+                <button class="btn btn-primary btn-lg" id="opcion-2" onclick="location.href='nivelfallido.html'">Cortar la Pizza en 10 Pedazos y dar 4</button>
+                <br>
+                <button class="btn btn-primary btn-lg" id="opcion-3" onclick="location.href='nivelfallido.html'">Cortar la Pizza en 15 Pedazos y dar 6</button>
+                <button class="btn btn-primary btn-lg" id="opcion-4" onclick="location.href='nivelfallido.html'">Cortar la Pizza en 20 Pedazos y dar 8</button>
+            </div>
+            
+            
+            <!-- Botón de regresar -->
+            <div class="card-footer text-center">
+                <button class="btn btn-secondary btn-lg" id="regresar" onclick="location.href='niveles.html'">
+                    <i class="fas fa-arrow-left"></i> Regresar
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/score.js"></script>
+    <!-- Agregar Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

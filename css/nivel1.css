@@ -1,0 +1,100 @@
+
+@keyframes slideUp {
+    from {
+        top: 100%; /* Comienza desde abajo fuera de la pantalla */
+        opacity: 0; /* La imagen es invisible al inicio */
+    }
+    to {
+        top: 35%; /* Se mueve hacia la posición deseada */
+        opacity: 1; /* La imagen se vuelve visible */
+    }
+}
+.card {
+    position: relative; /* Cambiado a relativo para evitar problemas de superposición */
+    width: 90vw; /* Ajusta el ancho del contenedor al 90% del viewport */
+    height: 90vh; /* Ajusta la altura del contenedor al 90% del viewport */
+    margin: 0 auto;
+    overflow: hidden; /* Asegúrate de que la imagen no sobresalga del contenedor */
+}
+
+.card-img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Imagen de fondo detrás de todos los elementos */
+}
+
+.pizza-img {
+    width: 15vw; /* Ocupará un 15% del ancho del viewport */
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Asegura que la imagen esté por encima del fondo */
+}
+
+.card-header {
+    position: relative;
+    z-index: 3; /* Encabezado por encima del fondo */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el texto */
+    padding: 10px;
+}
+
+.card-body {
+    position: relative;
+    z-index: 3; /* Enunciado por encima del fondo */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el texto */
+    padding: 10px;
+    margin-top: 400px; /* Asegúrate de que no se solape con la imagen de la pizza */
+    font-size: 40px; /* Ajusta el tamaño del texto */
+    font-family: 'OpenDyslexic', sans-serif;
+    
+}
+
+.opciones {
+    position: relative;
+    z-index: 3; /* Opciones por encima del fondo */
+    text-align: center;
+     /* Mueve las opciones más abajo */
+}
+
+.opciones button {
+    margin: 10px;
+    font-family: 'OpenDyslexic', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 30px;
+}
+
+.card-footer {
+    position: relative;
+    z-index: 3; /* Footer por encima del fondo */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el texto */
+    padding: 10px;
+    margin-top: 20px;
+}
+.chef-img {
+    width: 25vw;
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: slideUp 1s ease-out forwards; /* Aplica la animación */
+}
+
+.client-img {
+    width: 25vw;
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: slideUp 1s ease-out forwards; /* Aplica la animación */
+}
+
+

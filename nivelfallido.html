@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel Fallido</title>
+    
+    <!-- Agregar Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Agregar Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tu hoja de estilos personalizada -->
+    <link rel="stylesheet" href="css/nivel1.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card">
+            <!-- Encabezado de Nivel -->
+            <div class="card-header text-center">
+                <h2>Has Fallado</h2>
+            </div>
+            
+            <!-- Imagen de fondo -->
+            <img src="assets/images/backgrond-level-1.jpg" alt="Fondo de selección de niveles un restaurante hermoso" class="card-img">
+            <img src="assets/images/sad_chef.png" alt="Imagen de la asistente del cheff triste" class="pizza-img" style="width: 22vw; top:32%">
+            
+            
+            <!-- Enunciado -->
+            <div class="card-body text-center">
+
+                <p>Lo lamento esa no es la respuesta pero puedes volverlo a intentar</p>
+             
+            </div>
+            
+            <!-- Opciones -->
+            <div class="opciones">
+                <button class="btn btn-primary btn-lg" id="opcion-1" onclick="history.back()">Volver a intentar el nivel</button>
+                <button class="btn btn-secondary btn-lg" id="regresar" onclick="location.href='niveles.html'">
+                    <i class="fas fa-arrow-left"></i> Regresar a la seleccion de niveles
+                </button>
+                
+            </div>
+          
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

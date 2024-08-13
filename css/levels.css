@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=OpenDyslexic:wght@400;700&display=swap');
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.encabezado {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-family: 'OpenDyslexic', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.bounce-animation {
+    animation: bounce 2s infinite;
+}
+    .card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw; /* Ajusta el ancho del contenedor al 90% del viewport */
+        height: 90vh; /* Ajusta la altura del contenedor al 90% del viewport */
+        margin: 0 auto;
+        overflow: hidden; /* Asegúrate de que la imagen no sobresalga del contenedor */
+    }
+
+    .card-img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+        object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .niveles {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .niveles button {
+        margin: 10px;
+        font-family: 'OpenDyslexic', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 15px 30px;
+    }
+    .opciones {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    .opciones button {
+        margin: 10px;
+        font-family: 'OpenDyslexic', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 15px 30px;
+    }
+
+
+    .card-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pizza-img {
+        width: 15vw; /* Ocupará un 15% del ancho del viewport */
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Asegura que la imagen esté por encima del fondo */
+    }
+    .chef-img {
+        width: 15vw; /* Ocupará un 15% del ancho del viewport */
+        position: absolute; 
+        top: 20%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Asegura que la imagen esté por encima del fondo */
+    }
+    .client-img {
+        width: 15vw; /* Ocupará un 15% del ancho del viewport */
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Asegura que la imagen esté por encima del fondo */
+    }
+

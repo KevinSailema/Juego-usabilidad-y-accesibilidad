@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Nivel</title>
+    
+    <!-- Agregar Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Agregar Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tu hoja de estilos personalizada -->
+    <link rel="stylesheet" href="css/levels.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card">
+          
+          <img src="assets/images/background-niveles.jpg" alt="Fondo de selección de niveles un restaurante hermoso italiano" class="card-img">
+          <div class="encabezado">
+            <h1 class="bounce-animation" style="color: aliceblue; ">Seleccion de Niveles</h1>
+            </div>
+          
+          
+          <div class="niveles">
+            
+            <button class="btn btn-primary btn-lg" id="nivel-1" onclick="location.href='nivel1.html'">Nivel 1</button>
+            <button class="btn btn-primary btn-lg" id="nivel-2" onclick="location.href='nivel2.html'">Nivel 2</button>
+            <button class="btn btn-primary btn-lg" id="nivel-3" onclick="location.href='nivel3.html'">Nivel 3</button>
+            <button class="btn btn-primary btn-lg" id="nivel-4" onclick="location.href='nivel4.html'">Nivel 4</button>
+            <button class="btn btn-primary btn-lg" id="nivel-5" onclick="location.href='nivel5.html'">Nivel 5</button>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-secondary btn-lg" id="regresar" onclick="location.href='index.html'">
+              <i class="fas fa-arrow-left"></i> Regresar
+            </button>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Agregar Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

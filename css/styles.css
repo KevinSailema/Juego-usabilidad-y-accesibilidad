@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=OpenDyslexic:wght@400;700&display=swap');
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce-animation {
+    animation: bounce 2s infinite;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.encabezado {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-family: 'OpenDyslexic', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.card-img-overlay .encabezado {
+    position: relative; /* Cambia la posición a relativa para que esté dentro de la overlay */
+    top: auto; /* Quita la posición top para que se ajuste automáticamente */
+    left: auto; /* Quita la posición left para que se ajuste automáticamente */
+    transform: none; /* Quita la transformación para que se ajuste automáticamente */
+}
+
+body {
+
+    background-color: #452B1F; /* Color madera oscura */
+    margin: 0;
+    padding: 0;
+}
+
+.botones {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    flex-direction: column; /* Organiza los botones verticalmente */
+    gap: 20px; /* Agrega un espacio entre los botones */
+}
+
+.botones button {
+    width: 200px; /* Establece un ancho fijo para los botones */
+    font-family: 'OpenDyslexic', sans-serif; /* Agrega la fuente OpenDyslexic a los botones */
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 30px;
+    color: aliceblue;
+    background-color: rgb(63, 50, 26);
+    margin-bottom: 10px;    
+
+}
+
+.btn-lg {
+    padding: 15px 30px; /* Aumenta el padding para hacer los botones más grandes */
+    font-size: 24px; /* Aumenta el tamaño de la fuente para hacer los botones más legibles */
+}
+.img-fluid {
+    width: 90vw; /* Ajusta el ancho de la imagen a 90% del viewport */
+    height: 90vh; /* Ajusta la altura de la imagen a 90% del viewport */
+    object-fit: cover;
+    position: absolute; /* Posiciona la imagen absolutamente */
+    top: 50%; /* Centra la imagen verticalmente */
+    left: 50%; /* Centra la imagen horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar la imagen */
+} 
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.niveles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.niveles button {
+    margin: 10px;
+    font-family: 'OpenDyslexic', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 30px;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
