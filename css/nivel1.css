@@ -71,12 +71,23 @@
     font-size: 2vw;
 }
 
+/* .card-body{
+    background-color: rgba(255, 253, 253, 0.8);
+} */
 
+.espacio{
+    padding-top: 400px;
+}
 
 .card-body h1, .card-body h2 {
     background-color: rgba(255, 253, 253, 0.8);
     padding: 10px;
     display: inline-block;
+}
+
+.card-body p{
+    background-color: rgba(255, 253, 253, 0.8);
+
 }
 
 .pizza-img, .chef-img, .client-img {
@@ -150,3 +161,4 @@
         opacity: 1;
     }
 }
+
