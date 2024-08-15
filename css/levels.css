@@ -25,6 +25,14 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
+.card-header {
+    position: relative;
+    z-index: 3; /* Encabezado por encima del fondo */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el texto */
+    padding: 10px;
+}
+
 .bounce-animation {
     animation: bounce 2s infinite;
 }
